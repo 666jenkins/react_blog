@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom'
 
 const UserItem = ({ id, name }) => {
     return (
-        <li>
-            <Link to={`/authors/${id}`}><h4>{name}</h4></Link>
-        </li>
+        <Link to={`/authors/${id}`} className='collection-item'><h5 style={{ color: '#039be5' }}>{name}</h5></Link>
     )
 }
 

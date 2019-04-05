@@ -19,7 +19,7 @@ class Authors extends React.Component {
     render() {
         return (
             <>
-                <h2>AUTHORS</h2>
+                <h4 style={{ paddingLeft: '10px', marginBottom: '30px' }}><i>AUTHORS</i></h4>
                 <AuthorsList authors={this.state.authors} />
             </>
         )

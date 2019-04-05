@@ -9,7 +9,7 @@ import SingleAuthor from '../components/authors/SingleAuthor'
 const Main = () => {
 
     return (
-        <main>
+        <main className='container'>
             <Switch>
                 <Route path='/authors/:id' component={SingleAuthor} />
                 <Route path='/authors' component={Authors} />

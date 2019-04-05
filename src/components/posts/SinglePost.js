@@ -49,11 +49,14 @@ class SinglePost extends React.Component {
 
         return (
             <>
-                <h3>{post.title}</h3>
-                <Link to={`/authors/${author.id}`}>{author.name}</Link>
-                <p>{post.body}</p>
+                <div className='center-align'>
+                    <h3>{post.title}</h3>
+                    <Link to={`/authors/${author.id}`}><h5><i>{author.name}</i></h5></Link>
+                </div>
+                <p id='inPost'>{post.body}</p>
+                <div className='spacer'></div>
                 <hr />
-                <h4>{`${otherPosts.length} more posts from this author`}</h4>
+                <h5>{`${otherPosts.length} more posts from this author`}</h5>
                 <ul>
                     {otherPosts}
                 </ul>

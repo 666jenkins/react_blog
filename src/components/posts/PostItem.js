@@ -5,10 +5,14 @@ import { Link } from 'react-router-dom'
 const PostItem = ({ id, title, body }) => {
 
     return (
-        <li>
-            <Link to={`/posts/${id}`}> <h4>{title}</h4> </Link>
-            <p>{body}</p>
-        </li>
+        <Link to={`/posts/${id}`}>
+            <div className='card-panel hoverable'>
+                <li>
+                    <h5>{title}</h5>
+                    <p>{body}</p>
+                </li>
+            </div>
+        </Link>
     )
 
 }

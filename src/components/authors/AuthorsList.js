@@ -2,9 +2,9 @@ import React from 'react'
 import UserItem from './UserItem';
 const AuthorsList = ({ authors }) => {
     return (
-        <ul>
+        <div className='collection'>
             {authors.map(user => <UserItem key={user.id} id={user.id} name={user.name} />)}
-        </ul>
+        </div>
     )
 }
 export default AuthorsList

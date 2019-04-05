@@ -22,7 +22,7 @@ class PostPage extends React.Component {
     render() {
         return (
             <>
-                <h2>POSTS</h2>
+                <h3 className='center-align'><i>POSTS</i></h3>
                 <PostList posts={this.state.posts} />
             </>
         )

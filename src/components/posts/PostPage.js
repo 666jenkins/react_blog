@@ -1,6 +1,7 @@
 import React from 'react'
-import PostList from './PostList';
-import { fetchPosts } from '../../services/postService';
+import PostList from './PostList'
+import { fetchPosts } from '../../services/postService'
+import { Link } from 'react-router-dom'
 
 
 class PostPage extends React.Component {
@@ -22,7 +23,10 @@ class PostPage extends React.Component {
     render() {
         return (
             <>
-                <h3 className='center-align'><i>POSTS</i></h3>
+                <div className='center-align'>
+                    <h3><i>POSTS</i></h3>
+                    <Link to='/posts/new' className="btn-floating btn-large blue pulse"><i className="fas fa-plus"></i></Link>
+                </div>
                 <PostList posts={this.state.posts} />
             </>
         )
